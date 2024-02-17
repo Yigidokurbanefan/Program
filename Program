@@ -1,0 +1,16 @@
+import time
+yemekler = {
+            "ÇİĞKÖFTE": "Bulgurla yapılan bir yemek",
+            "İSKENDER": "Dana Etinden yapılan bir yemek",
+            "TAVUK KANAT": "Tavuk Etinden yapılan bir yemek"
+           }
+print("Selam, size birkaç yemek anlatıcağım...")
+while True:
+    print(yemekler)
+    istek = input("Anlamadığınız bir yemek var mı")
+    if istek in yemekler.keys():
+        print(istek,"İŞTE EFENDİM")
+    else:
+        print("Sağolun İki Saat Açıklatmadınız(anlamasaydın uzun uzun anlatıcaktım)")
+        time.sleep(1)
+        print("Bu bir Döngü")
